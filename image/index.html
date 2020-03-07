@@ -1,0 +1,37 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- PLEASE NO CHANGES BELOW THIS LINE (UNTIL I SAY SO) -->
+  <script language="javascript" type="text/javascript" src="libraries/p5.min.js"></script>
+  <script language="javascript" type="text/javascript" src="processing.js"></script>
+  <script language="javascript" type="text/javascript" src="image.js"></script>
+  <!-- OK, YOU CAN MAKE CHANGES BELOW THIS LINE AGAIN -->
+</head>
+<body>
+    <table>
+      <tbody>
+        <tr>
+          <td colSpan="2" style="text-align:center">
+            <h2>Floor Number</h2>
+          </td>
+        </tr>
+        <tr>
+          <td valign="top">
+            <form onSubmit="doThis()"> 
+              <input id="Xc" name="xcord" type="text" />
+              <br>
+              <input id="Yc" name="ycord" type="text"/>
+              <br/>
+              <input type="button" value="Submit" onclick="doThis()" style= {width: "113px", height: "20px"}/>
+            </form>
+          </td>
+          <td>
+            <canvas data-processing-sources="mixing.pde"></canvas>
+          </td> 
+        </tr>
+      </tbody>
+    </table>
+ </body>
+</html>
